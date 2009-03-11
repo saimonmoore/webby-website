@@ -1,13 +1,11 @@
 ﻿---
 extension: html
-filter:    haml
+filter: haml
 ---
-
 !!! Strict
-%html{ :xmlns => "http://www.w3.org/1999/xhtml"}
+%html{ :xmlns => "http://www.w3.org/1999/xhtml", :lang => "en", :'xml:lang' => "en"}
   %head
-    %title
-      = @page.title
+    %title=@page.title
     %link{ :href => "/images/favicon.ico", :rel => "shortcut icon" }
     %link{ :href => "/css/coderay.css", :rel => "stylesheet", :type => "text/css", :media => "screen" }
     %link{ :href => "/css/site.css", :rel => "stylesheet", :type => "text/css", :media => "screen" }
